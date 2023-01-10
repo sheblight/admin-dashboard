@@ -1,3 +1,8 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --sub-color: rgb(177, 56, 48)
+}
+
 body {
     background-color: rgb(170, 194, 218);
     display: grid;
@@ -13,21 +18,54 @@ p {
 }
 
 .side-menu {
-    background-color:cornflowerblue;
+    background-color:var(--sub-color);
     color: white;
     grid-area: 1/1/4/1;
+    display:grid;
+    align-items: center;
+    grid-template-rows: 40px repeat(11, 40px);
+    padding-top: 30px;
+    padding-left: 30px;
 }
+
+.side-menu h2 > *, .side-menu a > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.side-menu h2 {
+    margin-left: -10px;
+    font-size: 25px;
+}
+
 .side-menu a {
     font-weight: bold;
     text-decoration: none;
+    font-size: 19px;
 }
 .side-menu a:visited {
     color: white;
 }
 
+
+
+.side-menu svg {
+    margin-right: 10px;
+}
+
 .header {
     background-color:white;
     grid-area: 1/2/1/4;
+}
+
+.lower-container button {
+    font: bold 15px Arial;
+    color: white;
+    background-color: var(--sub-color);
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    height: 40px;
 }
 
 .content.main {
