@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(170, 194, 218);
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
@@ -22,27 +22,18 @@ body {
     grid-area: 1/2/1/4;
 }
 
-.content {
-    font-size: 20px;
-    font-weight: bold;
-}
 
 .content.main {
     grid-area: 2/2/4/2;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-rows: repeat(auto-fit, 200px);
+}
+
+.entry-project {
+    background-color: white;
 }
 
 .container-right {
     grid-area: 2/3/4/3;
-}
-
-.main::before {
-    content: "Your Projects"
-}
-
-.announcements::before {
-    content: "Announcements"
-}
-
-.trending::before {
-    content: "Trending"
 }
