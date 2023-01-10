@@ -8,6 +8,10 @@ body {
 
 }
 
+p {
+    color: grey;    
+}
+
 .side-menu {
     background-color:cornflowerblue;
     grid-area: 1/1/4/1;
@@ -22,18 +26,29 @@ body {
     grid-area: 1/2/1/4;
 }
 
-
 .content.main {
     grid-area: 2/2/4/2;
+    
+}
+
+.grid-project {
     display:grid;
     grid-template-columns: repeat(auto-fit, 200px);
-    grid-template-rows: repeat(auto-fit, 200px);
+    grid-template-rows: repeat(auto-fit, 300px);
 }
 
 .entry-project {
     background-color: white;
+    border-style: solid;
+    border-color: white white white orange;
+    border-width: 4px;
+    border-radius: 5px;
 }
 
 .container-right {
     grid-area: 2/3/4/3;
+}
+
+.content.announcements, .content.trending {
+    background-color: white;
 }
