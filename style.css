@@ -14,11 +14,15 @@ p {
 
 .side-menu {
     background-color:cornflowerblue;
+    color: white;
     grid-area: 1/1/4/1;
 }
-
 .side-menu a {
-    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+.side-menu a:visited {
+    color: white;
 }
 
 .header {
