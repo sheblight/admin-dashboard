@@ -17,6 +17,21 @@ p {
     color: grey;    
 }
 
+.profile-pic{
+    background-size: contain;
+    border: none;
+    border-radius: 100%;
+}
+
+.owner {
+    background-image: url("images/icon-sheb.jpg");
+}
+
+.header {
+    background-color:white;
+    grid-area: 1/2/1/4;
+}
+
 .side-menu {
     background-color:var(--sub-color);
     color: white;
@@ -47,15 +62,13 @@ p {
     color: white;
 }
 
-
-
 .side-menu svg {
     margin-right: 10px;
 }
 
-.header {
-    background-color:white;
-    grid-area: 1/2/1/4;
+.lower-container img {
+    width: 80px;
+    height: 80px;
 }
 
 .lower-container button {
