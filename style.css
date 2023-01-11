@@ -1,16 +1,16 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
-    --sub-color: rgb(177, 56, 48)
+    --main-color: rgb(247, 218, 218);
+    --sub-color: rgb(196, 70, 61);
 }
 
 body {
-    background-color: rgb(170, 194, 218);
+    background-color: var(--main-color);
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
     height: 100vh;
     margin: 0;
-
 }
 
 p {
@@ -27,11 +27,8 @@ p {
     background-image: url("images/icon-sheb.jpg");
 }
 
-.header {
-    background-color:white;
-    grid-area: 1/2/1/4;
-}
 
+/* Side Menu Elements */
 .side-menu {
     background-color:var(--sub-color);
     color: white;
@@ -65,6 +62,46 @@ p {
 .side-menu svg {
     margin-right: 10px;
 }
+
+/* Header Elements */
+header {
+    background-color:white;
+    grid-area: 1/2/1/4;
+    padding: 20px 30px;
+}
+
+.upper-container {
+    display: grid;
+    grid-template-columns: 20px minmax(100px, 500px) 50px 50px 150px;
+    grid-template-rows: 50px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-container input {
+    background-color: var(--main-color);
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+}
+
+.upper-container button {
+    height: 50px;
+    background-color: inherit;
+    border: none;
+}
+
+.upper-container a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.upper-container a:visited {
+    color: black;
+}
+
 
 .lower-container img {
     width: 80px;
