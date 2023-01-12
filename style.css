@@ -7,9 +7,9 @@
 body {
     background-color: var(--main-color);
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: minmax(250px,300px) 3fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
-    height: 100vh;
+    height: auto;
     margin: 0;
 }
 
@@ -72,10 +72,10 @@ header {
 
 .upper-container {
     display: grid;
-    grid-template-columns: 20px minmax(100px, 500px) 50px 50px 150px;
+    grid-template-columns: 20px minmax(100px, 1000px) 50px 50px 50px 150px;
     grid-template-rows: 50px;
     gap: 20px;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -105,7 +105,7 @@ header {
 
 .lower-container {
     display: grid;
-    grid-template-columns: 90px minmax(100px, 700px) repeat(3, 100px);
+    grid-template-columns: 90px minmax(100px, 1000px) repeat(3, 100px);
     grid-template-rows: 60px;
     align-items: center;
     
@@ -141,9 +141,9 @@ header {
 
 .grid-project {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
-    grid-template-rows: 160px;
-    grid-auto-rows: 160px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto 1fr 1fr;
+    grid-auto-rows: 1fr;
     align-items: center;
     gap: 15px;
 }
@@ -188,6 +188,7 @@ header {
 
 .container-right {
     grid-area: 2/3/4/3;
+    margin-left: 10px;
     margin-right: 25px;
 }
 
