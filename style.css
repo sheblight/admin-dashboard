@@ -67,7 +67,7 @@ p {
 header {
     background-color:white;
     grid-area: 1/2/1/4;
-    padding: 20px 30px;
+    padding: 10px 30px;
 }
 
 .upper-container {
@@ -105,15 +105,15 @@ header {
 
 .lower-container {
     display: grid;
-    grid-template-columns: 100px minmax(100px, 700px) repeat(3, 100px);
-    grid-template-rows: 80px;
+    grid-template-columns: 90px minmax(100px, 700px) repeat(3, 100px);
+    grid-template-rows: 60px;
     align-items: center;
     
 }
 
 .lower-container img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 
 .lower-container > div > * {
@@ -127,7 +127,7 @@ header {
     border: none;
     border-radius: 20px;
     width: 90px;
-    height: 40px;
+    height: 35px;
 }
 
 .content h1, .container-right h1 {
@@ -136,16 +136,16 @@ header {
 
 .content.main {
     grid-area: 2/2/4/2;
-    margin: 0 0 0 10px; 
+    margin: 0 10px 0 20px; 
 }
 
 .grid-project {
     display:grid;
-    grid-template-columns: repeat(auto-fill, 400px);
-    grid-template-rows: 180px;
-    grid-auto-rows: 180px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
+    grid-template-rows: 160px;
+    grid-auto-rows: 160px;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .entry-project {
@@ -170,6 +170,7 @@ header {
 
 .entry-project p {
     font-size: 15px;
+    margin-top: 5px;
 }
 
 .entry-project button {
@@ -187,8 +188,63 @@ header {
 
 .container-right {
     grid-area: 2/3/4/3;
+    margin-right: 25px;
 }
 
 .content.announcements, .content.trending {
     background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.divider {
+    border: 1px rgb(138, 138, 138) solid;
+}
+
+.announcements button {
+    display: grid;
+    grid-template-columns: 80px ;
+}
+
+.announcements h1 {
+    font-size: 15px;
+}
+
+.announcements p {
+    font-size: 13px;
+}
+
+.content.trending { 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.entry-trending {
+    display: grid;
+    grid-template-columns: 50px 200px;
+    grid-template-rows: 25px 25px;
+    text-align: left;
+    background-color: inherit; 
+    border: none;
+}
+
+.entry-trending img {
+    grid-area: 1/1/3/1;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.entry-trending h1 {
+    grid-area: 1/2/1/2;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.entry-trending p {
+    grid-area: 2/2/2/2;
+    margin-top: 4px;
+    margin-left: 5px;
 }
